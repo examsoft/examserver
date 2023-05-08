@@ -17,7 +17,7 @@ class UserController extends  BaseController
     public function users(){
         $obj = new Exam();
         $obj->test();
-        $results = app('db')->select("SELECT * FROM user order by id desc limit 10");
+        $results = app('db')->select("SELECT * FROM tbl_cand limit 10");
         return $results;
     }
 

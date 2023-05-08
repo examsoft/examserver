@@ -16,7 +16,8 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
+//common
+$router->get('/common/getCaptcha', 'Common\CommonController@users');
 
 $router->get('/user/add', 'UserController@add');
 
